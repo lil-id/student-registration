@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDetail">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Profil Siswa"
+        android:textColor="#343A40"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/picture_user_profile"
+        android:layout_width="272dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:riv_corner_radius="10dip"
+        app:riv_border_width="3dip"
+        app:riv_border_color="#758BFD"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/address_user_profile"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/address_user_profile"
+        app:srcCompat="@drawable/ic_outline_home_24" />
+
+    <TextView
+        android:id="@+id/name_user_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kholil Haq Alim Hakim"
+        android:textColor="#343A40"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/picture_user_profile"
+        app:layout_constraintStart_toStartOf="@+id/picture_user_profile"
+        app:layout_constraintTop_toBottomOf="@+id/picture_user_profile" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/location_user_profile"
+        app:layout_constraintEnd_toStartOf="@+id/location_user_profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/location_user_profile"
+        app:srcCompat="@drawable/ic_outline_emoji_flags_24" />
+
+    <TextView
+        android:id="@+id/address_user_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Jl. Pattimura No. 18"
+        android:textColor="#343A40"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/name_user_profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/name_user_profile" />
+
+    <TextView
+        android:id="@+id/location_user_profile"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="Luwu Timur"
+        android:textColor="#343A40"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/address_user_profile"
+        app:layout_constraintTop_toBottomOf="@+id/address_user_profile" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_gender_profile"
+        app:layout_constraintEnd_toStartOf="@+id/user_gender_profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/user_gender_profile"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/user_gender_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="Laki-Laki"
+        android:textColor="#343A40"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/location_user_profile"
+        app:layout_constraintTop_toBottomOf="@+id/location_user_profile" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_telepon_profile"
+        app:layout_constraintEnd_toStartOf="@+id/user_telepon_profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/user_telepon_profile"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_outline_phone_android_24" />
+
+    <TextView
+        android:id="@+id/user_telepon_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="082123456174"
+        android:textColor="#343A40"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/user_gender_profile"
+        app:layout_constraintTop_toBottomOf="@+id/user_gender_profile" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="324dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/ic_buttonsave" />
+
+    <TextView
+        android:id="@+id/button_back_to_resgister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kembali"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Pendaftaran Siswa Baru"
+                android:textColor="#343A40"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_box_input"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Nama"
+                android:inputType="text"
+                android:paddingStart="40dp"
+                android:textColor="#343A40"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edtName"
+                app:layout_constraintStart_toStartOf="@+id/edtName"
+                app:layout_constraintTop_toTopOf="@+id/edtName"
+                app:layout_constraintVertical_bias="0.457"
+                app:srcCompat="@drawable/ic_baseline_person_outline_24" />
+
+            <EditText
+                android:id="@+id/edtAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/ic_box_input"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Alamat"
+                android:inputType="text"
+                android:paddingStart="40dp"
+                android:textColor="#343A40"
+                app:layout_constraintEnd_toEndOf="@+id/edtName"
+                app:layout_constraintStart_toStartOf="@+id/edtName"
+                app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edtAlamat"
+                app:layout_constraintStart_toStartOf="@+id/edtAlamat"
+                app:layout_constraintTop_toTopOf="@+id/edtAlamat"
+                app:layout_constraintVertical_bias="0.457"
+                app:srcCompat="@drawable/ic_outline_home_24" />
+
+            <EditText
+                android:id="@+id/edtTelepon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/ic_box_input"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Telepon"
+                android:inputType="number"
+                android:paddingStart="40dp"
+                android:textColor="#343A40"
+                app:layout_constraintEnd_toEndOf="@+id/edtAlamat"
+                app:layout_constraintStart_toStartOf="@+id/edtAlamat"
+                app:layout_constraintTop_toBottomOf="@+id/edtAlamat" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edtTelepon"
+                app:layout_constraintStart_toStartOf="@+id/edtTelepon"
+                app:layout_constraintTop_toTopOf="@+id/edtTelepon"
+                app:layout_constraintVertical_bias="0.457"
+                app:srcCompat="@drawable/ic_outline_phone_android_24" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Jenis Kelamin:"
+                android:textColor="#343A40"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/edtTelepon"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edtTelepon"
+                app:layout_constraintTop_toBottomOf="@+id/edtTelepon" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <RadioButton
+                    android:id="@+id/laki_laki"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Laki-Laki"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="@+id/textView2"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:layout_editor_absoluteX="45dp" />
+
+                <RadioButton
+                    android:id="@+id/perempuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Perempuan"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="@+id/textView2"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:layout_editor_absoluteX="45dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Lokasi Pendaftaran:"
+                android:textColor="#343A40"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+            <ImageButton
+                android:id="@+id/myLocation"
+                android:layout_width="117dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="-2dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/locationValue"
+                app:layout_constraintTop_toBottomOf="@+id/locationValue"
+                app:srcCompat="@drawable/ic_button_find_me" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Lokasiku"
+                android:textColor="#ffff"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/myLocation"
+                app:layout_constraintEnd_toEndOf="@+id/myLocation"
+                app:layout_constraintHorizontal_bias="0.596"
+                app:layout_constraintStart_toStartOf="@+id/myLocation"
+                app:layout_constraintTop_toTopOf="@+id/myLocation" />
+
+            <TextView
+                android:id="@+id/locationValue"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Belum Ada"
+                android:textColor="#343A40"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/edtTelepon"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Unggah Foto:"
+                android:textColor="#343A40"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/myLocation"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/myLocation"
+                app:layout_constraintTop_toBottomOf="@+id/myLocation" />
+
+            <ImageButton
+                android:id="@+id/choosePhoto"
+                android:layout_width="117dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:srcCompat="@drawable/ic_button_upload" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Pilih"
+                android:textColor="#ffff"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/choosePhoto"
+                app:layout_constraintEnd_toEndOf="@+id/choosePhoto"
+                app:layout_constraintHorizontal_bias="0.443"
+                app:layout_constraintStart_toStartOf="@+id/choosePhoto"
+                app:layout_constraintTop_toTopOf="@+id/choosePhoto"
+                app:layout_constraintVertical_bias="0.666" />
+
+            <ImageButton
+                android:id="@+id/buttonRegister"
+                android:layout_width="330dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/choosePhoto"
+                app:srcCompat="@drawable/ic_buttonsave" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Daftar"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonRegister"
+                app:layout_constraintEnd_toEndOf="@+id/buttonRegister"
+                app:layout_constraintStart_toStartOf="@+id/buttonRegister"
+                app:layout_constraintTop_toTopOf="@+id/buttonRegister" />
+
+            <TextView
+                android:id="@+id/nameFile"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/poppins"
+                android:text="Belum Ada"
+                android:textColor="#343A40"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/link_registered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Sudah Daftar? Klik Disini"
+                android:textColor="#758BFD"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/buttonRegister"
+                app:layout_constraintStart_toStartOf="@+id/buttonRegister"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
